@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orkhan Khalilzade | Data Analyst & ML Enthusiast</title>
+    <!-- Favicon / Sayt İkonu -->
+    <link rel="icon" type="image/x-icon" href="assets/images.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo" data-i18n="logo-name">Orxan Xəlilzadə</div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Menyu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav id="siteNav">
+            <a href="#home" class="active" data-i18n="nav-home">Əsas səhifə</a>
+            <a href="#about" data-i18n="nav-about">Haqqımda</a>
+            <a href="#skills" data-i18n="nav-skills">Bacarıqlar</a>
+            <a href="#projects" data-i18n="nav-projects">Layihələr</a>
+            <a href="#contact" data-i18n="nav-contact">Əlaqə</a>
+            <div class="lang-switch">
+                <button type="button" data-lang="az">AZ</button>
+                <button type="button" data-lang="en" class="active">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="hero" style="background: linear-gradient(rgba(10, 15, 30, 0.82), rgba(10, 15, 30, 0.82)), url('assets/python_photo2.jpg') no-repeat center center / cover;">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <p class="small-text" data-i18n="hero-hello">Salam, mən</p>
+                <h1 data-i18n="hero-h1">Orxan<br><span>Xəlilzadə</span></h1>
+                <p class="typed-role"><span id="typed-text"></span><span class="cursor" aria-hidden="true">|</span></p>
+
+                <div class="buttons">
+                    <a href="#projects" class="btn primary" data-i18n="btn-projects">Layihələrə bax</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-label" data-i18n="stat1-label">Tamamlanmış layihə</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">15</span>
+                        <span class="stat-label" data-i18n="stat2-label">Alət &amp; texnologiya</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">AZ / EN</span>
+                        <span class="stat-label" data-i18n="stat3-label">Dil dəstəyi</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-box">
+                <img src="assets/Machine-Learning.png" alt="Machine Learning" class="right-ml-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="section-title">
+            <span data-i18n="about-label">Haqqımda</span>
+            <h2 data-i18n="about-title">Haqqımda</h2>
+        </div>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="assets/profile.jpg" alt="Orxan Xəlilzadə">
+            </div>
+            <div class="about-content">
+                <p data-i18n="about-p1">Mən hazırda <strong>Agro Food Investment MMC</strong>-də <strong>Məlumat Analitiki</strong> kimi çalışıram, burada məlumatların təhlili, hesabatlılıq və data əsaslı proseslərlə məşğulam.</p>
+                <p data-i18n="about-p2">Məlumatlara olan marağım ənənəvi hesabatlardan daha dərinə gedir. Həmişə qanunauyğunluqları başa düşmək, proqnozlaşdırıcı modellər qurmaq və maşın öyrənməsi ilə problemləri həll etmək məni cəlb etmişdir.</p>
+                <blockquote class="highlight" data-i18n="about-p3">Məqsədim Məlumat Analizindən <strong>Maşın Öyrənməsi və Süni İntellekt Mühəndisliyinə</strong> doğru irəliləməkdir.</blockquote>
+                <div class="buttons">
+                    <a href="https://www.linkedin.com/in/orkhan-khalilzade-b511273a9/" target="_blank" class="btn primary">LinkedIn</a>
+                    <a href="assets/Orxan_Xəlilzadə.pdf" target="_blank" class="btn secondary cv-link" data-cv-az="assets/Orxan_Xəlilzadə.pdf" data-cv-en="assets/Orkhan_Khalilzade.pdf">CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <div class="section-title">
+            <span data-i18n="skills-label">Bacarıqlar</span>
+            <h2 data-i18n="skills-title">Bacarıqlar</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-icon-card">
+                <img src="assets/python.png" alt="Python" loading="lazy">
+                <span>Python</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="assets/sql.png" alt="SQL" loading="lazy">
+                <span>SQL</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="assets/pandas.svg" alt="Pandas" loading="lazy">
+                <span>Pandas</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="assets/numpy.svg" alt="NumPy" loading="lazy">
+                <span>NumPy</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="assets/excel.png" alt="Excel" loading="lazy">
+                <span>Excel</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="assets/powerbi.png" alt="Power BI" loading="lazy">
+                <span>Power BI</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="assets/scikitlearn.svg" alt="Scikit-learn" loading="lazy">
+                <span>Scikit-learn</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="assets/tensorflow.png" alt="TensorFlow" loading="lazy">
+                <span>TensorFlow</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="assets/keras.png" alt="Keras" loading="lazy">
+                <span>Keras</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="https://cdn.simpleicons.org/streamlit/FF4B4B" alt="Streamlit" loading="lazy">
+                <span>Streamlit</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="assets/aws.svg" alt="AWS" loading="lazy">
+                <span>AWS</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="assets/jupyter.png" alt="Jupyter Lab" loading="lazy">
+                <span>Jupyter Lab</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="https://cdn.simpleicons.org/googlecolab/F9AB00" alt="Google Colab" loading="lazy">
+                <span>Google Colab</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="assets/vscode.png" alt="VS Code" loading="lazy">
+                <span>VS Code</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="assets/github.png" alt="GitHub" loading="lazy">
+                <span>GitHub</span>
+            </div>
+        </div>
+
+        <p class="subgroup-label" data-i18n="skills-methods-label">Metod və konsepsiyalar</p>
+        <div class="tags tags-center">
+            <span>Classification</span><span>Regression</span><span>Feature Engineering</span><span>SHAP</span><span>CNN</span><span>Transfer Learning</span><span>MobileNetV2</span><span>RAG</span><span>LLM</span><span>AI Automation</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects-bg">
+        <div class="section-title">
+            <span data-i18n="projects-label">Layihələr</span>
+            <h2 data-i18n="projects-title">Layihələr</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card featured">
+                <div class="project-category" data-i18n="proj2-category">Kompüter Görməsi</div>
+                <h3 data-i18n="proj2-title">Bitki Xəstəliklərinin Təsnifatı</h3>
+                <p data-i18n="proj2-desc">Şəkillər əsasında bitki xəstəliklərini təsnif etmək üçün dərin öyrənmə və transfer learning üsullarından istifadə edən kompüter görmə layihəsi.</p>
+                <div class="tags"><span>TensorFlow</span><span>Keras</span><span>CNN</span><span>MobileNetV2</span><span>Streamlit</span></div>
+                <div class="project-links">
+                    <a href="https://gul-xesteligi-app-83gjukozlkbazk3kmfvoga.streamlit.app/" target="_blank" class="project-link" data-i18n="link-live">Canlı tətbiq ➔</a>
+                    <a href="https://github.com/orkhankhalilzade985-byte/gul-xesteligi-app" target="_blank" class="project-link" data-i18n="link-github">GitHub kodu ➔</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-category" data-i18n="proj1-category">Maşın Öyrənməsi</div>
+                <h3 data-i18n="proj1-title">Kredit Kartı Borc Ödəməmə Proqnozu</h3>
+                <p data-i18n="proj1-desc">Kredit kartı üzrə borcun ödənilməməsi riskini proqnozlaşdırmağa və modelin qərarlarına təsir edən amilləri anlamağa yönəlmiş maşın öyrənməsi layihəsi.</p>
+                <div class="tags"><span>Python</span><span>Scikit-learn</span><span>SHAP</span><span>ROC-AUC</span><span>Streamlit</span></div>
+                <div class="project-links">
+                    <a href="https://credit-risk-scoring-app-n3sjzbdbrmskqumbccctjx.streamlit.app/" target="_blank" class="project-link" data-i18n="link-live">Canlı tətbiq ➔</a>
+                    <a href="https://github.com/orkhankhalilzade985-byte/credit-risk-scoring-app" target="_blank" class="project-link" data-i18n="link-github">GitHub kodu ➔</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-category" data-i18n="proj3-category">Data Analitikası</div>
+                <h3 data-i18n="proj3-title">Kənd Təsərrüfatı Məlumat İntellekti</h3>
+                <p data-i18n="proj3-desc">Əməliyyat xarakterli kənd təsərrüfatı məlumatlarını faydalı içgörülərə çevirməyə yönəlmiş məlumat analizi və avtomatlaşdırma konsepsiyaları.</p>
+                <div class="tags"><span>Python</span><span>Pandas</span><span>Automation</span><span>AI</span></div>
+                <div class="project-links">
+                    <a href="#" class="project-link" data-i18n="link-view">Layihəyə bax →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <div class="section-title">
+            <span data-i18n="contact-label">Əlaqə</span>
+            <h2 data-i18n="contact-title">Əlaqə Saxlayaq</h2>
+        </div>
+        <p data-i18n="contact-desc">Data layihələri, öyrənmə prosesim və ya maşın öyrənməsi ilə bağlı fikir mübadiləsi aparmaq istəyirsinizsə — yazmaqdan çəkinməyin!</p>
+        <div class="contact-grid">
+            <div class="contact-box">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#d9a441" stroke-width="1.8"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 data-i18n="contact-address-label">Yer</h3>
+                <p data-i18n="contact-address-value">Bakı, Azərbaycan</p>
+            </div>
+            <div class="contact-box">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#d9a441" stroke-width="1.8"><path d="M4 5h16v14H4z" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 6l8 7 8-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 data-i18n="contact-email-label">Email</h3>
+                <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=orkhankhalilzade985@gmail.com" target="_blank">orkhankhalilzade985@gmail.com</a></p>
+            </div>
+            <div class="contact-box">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" fill="#d9a441"><rect x="2.5" y="9" width="4" height="12" rx="0.5"/><circle cx="4.5" cy="4" r="2.3"/><path d="M9.5 9h4v2.1c.7-1.3 2.1-2.5 4.3-2.5 4 0 4.9 2.4 4.9 6.1V21h-4v-5.7c0-1.4 0-3.2-2-3.2s-2.3 1.6-2.3 3.1V21h-4z"/></svg>
+                </div>
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/orkhan-khalilzade-b511273a9/" target="_blank" data-i18n="contact-linkedin-value">Profilə bax</a></p>
+            </div>
+            <div class="contact-box">
+                <div class="contact-icon">
+                    <img src="https://cdn.simpleicons.org/github/d9a441" alt="GitHub" width="34" height="34">
+                </div>
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/orkhankhalilzade985-byte?tab=repositories" target="_blank" data-i18n="contact-github-value">Layihələrə bax</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 <span data-i18n="logo-name">Orxan Xəlilzadə</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
